@@ -15,5 +15,13 @@
 
 // SVOLGIMENTO //
 // CREATED VARIABLES //
+const chilometriInseriti = prompt("Inserisci il numero di chilometri da percorrere:");
+console.log(chilometriInseriti);
+
+const etaInserita = prompt("Età del passeggero:");
+console.log(etaInserita);
+
+
+
 
 
