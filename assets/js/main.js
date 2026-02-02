@@ -18,12 +18,14 @@
 let eta = Number(prompt("Inserire l'età del passeggero"));
 console.log("Età Inserita", eta);
 
-let chilometri = Number(prompt("Inserisci chilometri da percorrere"));
+let chilometri = Number(prompt("Inserisci i chilometri da percorrere"));
 console.log("Chilometri Inseriti", chilometri);
 
-const prezzoperkm = 0.21;
+const prezzoPerKm = 0.21;
 
 // 1. POINT //
+let prezzoTotale = chilometri * prezzoPerKm;
+
 
 
 
