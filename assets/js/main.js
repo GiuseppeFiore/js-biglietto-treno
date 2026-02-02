@@ -4,8 +4,8 @@
 // 1. il prezzo del biglietto è definito in base ai km (0.21 € al km) //
 // 2. va applicato uno sconto del 20% per i minorenni //
 // 3. va applicato uno sconto del 40% per gli over 65. //
-// 4. L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, // 
-      // per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. //
+// 4. L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, //
+// per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. //
 
 // TIP: //
 // per controllare che la vostra logica sui prezzi funzioni correttamente, provate a verificare quanto segue: //
@@ -26,10 +26,11 @@ const prezzoPerKm = 0.21;
 // 1. POINT //
 let prezzoTotale = chilometri * prezzoPerKm;
 
+// 2. POINT //
+if (eta < 18) {
+  prezzoTotale = prezzoTotale * 0.8;
 
-
-
-
-
-
-
+      // 3. POINT //
+} else if (eta > 65) {
+  prezzoTotale = prezzoTotale * 0.6;
+}
