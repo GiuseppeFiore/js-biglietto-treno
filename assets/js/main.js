@@ -15,11 +15,17 @@
 
 // SVOLGIMENTO //
 // CREATED VARIABLES //
-const chilometriInseriti = prompt("Inserisci il numero di chilometri da percorrere:");
-console.log(chilometriInseriti);
+let eta = Number(prompt("Inserire l'età del passeggero"));
+console.log("Età Inserita", eta);
 
-const etaInserita = prompt("Età del passeggero:");
-console.log(etaInserita);
+let chilometri = Number(prompt("Inserisci chilometri da percorrere"));
+console.log("Chilometri Inseriti", chilometri);
+
+const prezzoperkm = 0.21;
+
+// 1. POINT //
+
+
 
 
 
