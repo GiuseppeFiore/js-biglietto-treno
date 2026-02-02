@@ -24,13 +24,19 @@ console.log("Chilometri Inseriti", chilometri);
 const prezzoPerKm = 0.21;
 
 // 1. POINT //
-let prezzoTotale = chilometri * prezzoPerKm;
+let prezzoTotale = (chilometri * prezzoPerKm).toFixed(2);
 
-// 2. POINT //
+// 2. 3. POINT //
 if (eta < 18) {
   prezzoTotale = prezzoTotale * 0.8;
-
-      // 3. POINT //
 } else if (eta > 65) {
   prezzoTotale = prezzoTotale * 0.6;
 }
+
+// 4. POINT //
+console.log("Il costo totale del biglietto è:", prezzoTotale.toLocaleString("it-IT", {
+  style: "currency",
+  currency: "EUR",
+})); 
+
+
